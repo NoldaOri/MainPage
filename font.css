@@ -1,0 +1,10 @@
+﻿@charset "UTF-8";
+
+@font-face {
+    font-family: 'NotoSansCJK';
+    src: url("NOTOSANSCJKKR-REGULAR.otf");
+}
+
+body {
+    font-family: NotoSansCJK;
+}

@@ -1,0 +1,238 @@
+﻿/*유저페이지 css*/
+.avatar {
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.edit-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.spot {
+    width: 22px;
+    height: 22px;
+}
+
+#self {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#content {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+#user-box-menu {
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+#rate-box {
+    width: 60%;
+    text-align: center;
+    display: inline-block;
+    background-color: lightgray;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+#review-count {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 20px;
+}
+
+.rate {
+    display: inline-block;
+    width: 30%;
+    background-color: darkgrey;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.zzim {
+    display: inline-block;
+    width: 30%;
+    background-color: darkgrey;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.ment {
+    left: 50%;
+    width: 300px;
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+}
+
+.store_name {
+    text-align: left;
+    margin: 20px;
+}
+
+p {
+    text-align: left;
+    padding-top: 10px;
+    margin: 20px;
+}
+
+.rate_1 {
+    margin: 3px;
+    padding-top: 10px;
+}
+
+/*별점*/
+.checked {
+    color: darkorange;
+}
+
+.star_rating {
+    /*display: block;*/
+    text-align: center;
+}
+
+
+.overal_rating {
+    width: auto;
+    background: white;
+    border-radius: 40px;
+    padding: 10px;
+    /*    display: inline-block;*/
+    float: left;
+    font-weight: bold;
+}
+
+._rating {
+    float: left;
+    padding: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+
+/*전체적인 사이트 사이즈*/
+.layout {
+    display: grid;
+    border: 2px #101268;
+    grid-template-columns: 1fr 850px 1fr;
+    grid-template-rows: 60px 1fr 60px;
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+
+.body {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*page number navigation*/
+.pagination {
+    width: 80%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: solid;
+    }
+
+    .pagination a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .pagination a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+/*반응형으로 만들기 위한것*/
+/*800px 이하이면 박스들이 아래로 나열 이상이면 여기서 지정한 대로 나열*/
+@media(min-width:800px) {
+    .container_image {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.container_1 div {
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+
+.imageName {
+    flex-basis: 25%;
+}
+
+.store_img {
+    width: 270px;
+    height: 170px;
+    background-image: url(img/store.jpg);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*선빈이가 준 것*/
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: center;
+    width: 23%;
+    display: inline-block;
+}
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+        overflow: hidden;
+        height: 200px;
+        width: 200px;
+    }
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
